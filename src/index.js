@@ -1,11 +1,17 @@
 import Phaser, { Scene } from 'phaser';
-import {EscenaMapa} from './Escenas/escenaMapa.js';
+import {MapaDani} from './Escenas/mapaDani.js';
 
 var config = {
     type: Phaser.AUTO,
-    width: 200,
-    height: 200,
-    scene: [EscenaMapa]
+    width: 16 * 30,
+    height: 16 * 30,
+    scene: [MapaDani],
+    physics: {
+        default: 'arcade',
+        arcade: {
+            debug: false
+        }
+    },
 };
 
 var game = new Phaser.Game(config);
