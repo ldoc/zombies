@@ -6,6 +6,10 @@ var config = {
     width: 16 * 30,
     height: 16 * 30,
     scene: [MapaDani],
+    scale:{
+        mode:Phaser.Scale.FIT,
+        autoCenter:Phaser.Scale.CENTER_BOTH
+    },
     physics: {
         default: 'arcade',
         arcade: {
