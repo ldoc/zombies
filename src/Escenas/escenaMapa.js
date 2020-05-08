@@ -3,7 +3,7 @@ import Phaser, { Scene } from 'phaser';
 export class EscenaMapa extends Phaser.Scene{
     
     constructor(){
-        super({key:"mapa"})
+        super({key:"mapa"});
     }
 
     preload (){
